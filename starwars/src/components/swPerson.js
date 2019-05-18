@@ -4,7 +4,9 @@ import './StarWars.css';
 const SwPerson = props => {
   return (
     <div className="character-card">
-      <h3>{props.character.name}</h3>
+      <div className="title-wrapper">
+        <h3>{props.character.name}</h3>
+      </div>
       <ul className="character-list">
         <li>Gender: {props.character.gender}</li>
         <li>Height: {props.character.height}</li>
