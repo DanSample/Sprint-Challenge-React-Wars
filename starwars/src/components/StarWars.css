@@ -1,4 +1,11 @@
-.list-item .character-card {
+.list-item {
+}
+
+.character-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background: #fff;
   border-radius: 2px;
   display: flex;
@@ -7,4 +14,9 @@
   padding: 1rem;
   width: 400px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.character-card .character-list {
+  list-style: none;
+  padding: 0;
 }
