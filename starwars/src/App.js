@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import SwPerson from './swPerson';
+import SwPerson from './components/swPerson';
 
 class App extends Component {
   constructor() {
