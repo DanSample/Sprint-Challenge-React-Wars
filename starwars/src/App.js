@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 
+import SwPerson from './components/swPerson';
+
 class App extends Component {
   constructor() {
     super();
@@ -33,6 +35,11 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <div className="list-container">
+          {this.state.starwarsChars.map(character => (
+            <SwPerson character={character} />
+          ))}
+        </div>
       </div>
     );
   }
